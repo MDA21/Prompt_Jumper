@@ -2,25 +2,19 @@ using UnityEngine;
 
 public class TrapBubble : MonoBehaviour
 {
-    public int damage = 10;              // 每次触碰扣血量
-    public float damageInterval = 1f;    // 扣血间隔（秒）
+    public float damagePerSecond = 10f; // 每次触碰扣血量
+    public bool isCollider = false;
 
-    private float lastDamageTime = 0f;
-
-    private void OnCollisionStay(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        Debug.Log("TrapBubble collided with " + collision.gameObject.name);
-        // 检测玩家
-        PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
+        // 判断是否是玩家
+        isCollider = true;
+        PlayerHealth player = other.GetComponent<PlayerHealth>();
         if (player != null)
         {
-            if (Time.time - lastDamageTime >= damageInterval)
-            {
-                player.TakeDamage(damage);
-                lastDamageTime = Time.time;
-            }
+            // 持续造成伤害
+            player.TakeDamage((int)(damagePerSecond * Time.deltaTime));
         }
-
     }
 }
 
