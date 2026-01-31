@@ -1,0 +1,10 @@
+# Unity TMP / SDF generated fonts
+* SDF.asset
+* SDF.asset.meta
+
+# TMP fallback fonts
+TextMesh Pro/Resources/Fonts & Materials/
+
+# 精确忽略一个文件
+msyh SDF.asset
+msyh SDF.asset.meta

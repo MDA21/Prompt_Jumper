@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -6086202925803673095, guid: 06d53c7eaaa5cf742a59ee5699227865, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,8 +109,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 06d53c7eaaa5cf742a59ee5699227865, type: 2}
+  m_sharedMaterial: {fileID: -6086202925803673095, guid: 06d53c7eaaa5cf742a59ee5699227865, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -295,7 +295,6 @@ GameObject:
   - component: {fileID: 119235184168069102}
   - component: {fileID: 3394034725545884228}
   - component: {fileID: 6824919627600409862}
-  - component: {fileID: -6726273970227719367}
   - component: {fileID: 1602012928405386046}
   m_Layer: 3
   m_HasEditorInfo: 1
@@ -463,22 +462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
---- !u!114 &-6726273970227719367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881374819299729738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e68027eb5d6004d9537d08e51b47ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  maxTextWidth: 4.5
-  maxTextPerLine: 25
-  padding: {x: 0.6, y: 0.4}
 --- !u!114 &1602012928405386046
 MonoBehaviour:
   m_ObjectHideFlags: 0

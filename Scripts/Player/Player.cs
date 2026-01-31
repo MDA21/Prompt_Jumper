@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
+// using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
@@ -24,12 +24,12 @@ public class Player : MonoBehaviour
 
     [Header("Interaction Settings")]
     public float moveSpeed = 5f;
-    [FormerlySerializedAs("jumpSpeed")] public float jumpForce = 13f;
+    public float jumpForce = 13f;
     public float _moveDir {get; private set;}
     public float crazyBubbleBounceForce = 20f;
     
-    [SerializeField]public bool groundDetected { get; private set; }
-    [SerializeField]public bool crazyDetected { get; private set; }
+    public bool groundDetected;
+    public bool crazyDetected;
 
     public PlayerHealth Health { get; private set; }
 

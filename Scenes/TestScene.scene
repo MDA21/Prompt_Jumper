@@ -889,86 +889,6 @@ MonoBehaviour:
   lerpDuration: 0.2
   bottomPauseSeconds: 1
   topLockSeconds: 5
---- !u!1001 &830984786
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5647139344752633106, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647139344752633106, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7681272497005758857, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 640
-      objectReference: {fileID: 0}
-    - target: {fileID: 7681272497005758857, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7988820189231603186, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_Name
-      value: TrapBubble
-      objectReference: {fileID: 0}
-    - target: {fileID: 7988820189231603186, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653087664407528924, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1107194841197894145, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: eb6ec13d314cfbd479f2cd5fefc559a4, type: 3}
 --- !u!1 &1586353685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,7 +1154,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c7b293825161dfe4da60e2811c73e9b3, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -1246,7 +1166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F60\u64A4\u56DE\u4E86\u4E00\u6761\u6D88\u606F\n"
+  m_Text: Hello
 --- !u!222 &1697754120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1612,4 +1532,3 @@ SceneRoots:
   - {fileID: 1586353689}
   - {fileID: 2124431038}
   - {fileID: 1670968245}
-  - {fileID: 830984786}
