@@ -64,11 +64,10 @@ public class BubbleView : MonoBehaviour
         text.transform.localPosition = Vector3.zero;
 
         float left = -bubbleSize.x / 2f;
-        float right = bubbleSize.x / 2f;
-        float randomX = Random.value < 0.5f ? left : right;
+        float X = left;
 
 
-        Tail.localPosition = new Vector3(randomX, 0f, 0f);
+        Tail.localPosition = new Vector3(X, 0f, 0f);
         //Color color = setColor(type);
         //Tail.GetComponent<SpriteRenderer>().color = color;
         //sr.color = color;

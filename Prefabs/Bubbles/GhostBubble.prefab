@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 8717699712081701355}
   - component: {fileID: 6015888660595677292}
   - component: {fileID: 5476267002287761914}
+  - component: {fileID: 6790027309257148122}
   m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: GhostBubble
@@ -298,6 +299,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &6790027309257148122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2897756893861288886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e68027eb5d6004d9537d08e51b47ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1224958716468008984}
+  maxTextWidth: 4.5
+  maxTextPerLine: 25
+  padding: {x: 0.6, y: 0.4}
 --- !u!1 &5477231658615640519
 GameObject:
   m_ObjectHideFlags: 0
