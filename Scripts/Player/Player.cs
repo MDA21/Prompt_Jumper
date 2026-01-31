@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float wallCheckDistance = 0.5f;
     [SerializeField]private LayerMask whatIsGround;
     [SerializeField]private LayerMask whatIsCrazy;
+    private bool canBounce = true;
 
     private void Awake()
     {
@@ -167,12 +168,7 @@ public class Player : MonoBehaviour
         
         RaycastHit2D crazyHit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsCrazy);
         crazyDetected = crazyHit;
-        
-        if (crazyDetected)
-        {
-            Vector2 direction = (transform.position - crazyHit.transform.position).normalized;
-            rb.AddForce(direction * crazyBubbleBounceForce, ForceMode2D.Impulse);
-        }
+
     }
     
     public void OnDrawGizmos()
@@ -222,6 +218,31 @@ public class Player : MonoBehaviour
             color.a = alpha;
             sr.color = color;
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (crazyDetected && canBounce)
+        {
+            canBounce = false;
+            Vector2 direction = (transform.position - collision.transform.position).normalized;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, 0f));
+            rb.AddForce(direction * crazyBubbleBounceForce, ForceMode2D.Impulse);
+            StartCoroutine(ResetBounce());
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (!crazyDetected)
+        {
+            canBounce = true;
+        }
+    }
+
+    private IEnumerator ResetBounce()
+    {
+        yield return new WaitForSeconds(0.2f);
+        canBounce = true;
     }
 
     
