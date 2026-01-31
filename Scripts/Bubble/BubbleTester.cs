@@ -9,7 +9,7 @@ public class BubbleTester : MonoBehaviour
     private void Start()
     {
         Spawn("Hello, World!", new Vector3(-3, 2, 0));
-        Spawn("This is a longer message to test the bubble sizing functionality.", new Vector3(0, 0, 0));
+        Spawn("This is a longer message to test the bubble sizing functionality.", new Vector3(10, 0, 0));
         Spawn("Short msg", new Vector3(3, -3, 0));
     }
 
