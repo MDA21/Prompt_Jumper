@@ -1,0 +1,5 @@
+# text | x | y | type
+Trap here|0|0|Trap
+Missile ready|3|1|Missile
+Hidden mine|-2|0.5|Mine
+HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello|5|5|Mine 

@@ -464,7 +464,7 @@ MonoBehaviour:
   wallCheckDistance: 0.5
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!114 &364434460
 MonoBehaviour:
   m_ObjectHideFlags: 0
