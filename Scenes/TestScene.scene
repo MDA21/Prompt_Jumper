@@ -459,6 +459,7 @@ MonoBehaviour:
   stableSprite: {fileID: 21300000, guid: 11126d79e7d8498428b097063433d2b7, type: 3}
   crazySprite: {fileID: 21300000, guid: 789e96b7a9b046041b7d185d6ef6ee60, type: 3}
   invisibleSprite: {fileID: 21300000, guid: d9435a4cc5590a24ea5d2359eef18c25, type: 3}
+  hurtSprite: {fileID: 21300000, guid: 5127cb238fcccc74887981d5fa6c4e68, type: 3}
   stableBubblePrefabs:
   - {fileID: 8342500996144460793, guid: 4c06d27e60b4d9d47b6be26530913628, type: 3}
   crazyBubblePrefabs:
@@ -468,15 +469,15 @@ MonoBehaviour:
   jumpForce: 10
   crazyBubbleBounceForce: 15
   groundCheckDistance: 0.55
-  wallCheckDistance: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
   whatIsCrazy:
     serializedVersion: 2
     m_Bits: 256
-  playerCrazyReward: 7
+  playerCrazyCost: 10
   playerStableCost: 5
+  maxStableBubbles: 3
 --- !u!114 &364434460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxValue: 100
   ui: {fileID: 0}
+  regenPerSecond: 10
 --- !u!1 &430587814
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +878,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85d2b62416723994ea63bcb1af998dd4, type: 3}
   m_Name: 

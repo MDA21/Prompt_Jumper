@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Sprite stableSprite;
     public Sprite crazySprite;
     public Sprite invisibleSprite;
+    public Sprite hurtSprite;
     
     [Header("Bubble Prefabs")]
     public List<GameObject> stableBubblePrefabs;
@@ -39,13 +40,37 @@ public class Player : MonoBehaviour
     
     [Header("Collision Detection")]
     [SerializeField] private float groundCheckDistance = 0.55f;
-    [SerializeField] private float wallCheckDistance = 0.5f;
+    //[SerializeField] private float wallCheckDistance = 0.5f;
     [SerializeField]private LayerMask whatIsGround;
     [SerializeField]private LayerMask whatIsCrazy;
     private bool canBounce = true;
 
-    public int playerCrazyReward = 7;
-    public int playerStableCost = 5;
+    public int playerCrazyCost = 25;
+    public int playerStableCost = 20;
+    
+    public bool IsInvisible
+    {
+        get
+        {
+            return stateMachine != null && stateMachine.CurrentState == invisibleState;
+        }
+    }
+    
+    [Header("Stable Bubble Limit")]
+    public int maxStableBubbles = 3;
+    private List<GameObject> activeStableBubbles = new List<GameObject>();
+    public void RegisterStableBubble(GameObject bubble)
+    {
+        if (bubble == null) return;
+        activeStableBubbles.RemoveAll(b => b == null);
+        activeStableBubbles.Add(bubble);
+        while (activeStableBubbles.Count > maxStableBubbles)
+        {
+            var oldest = activeStableBubbles[0];
+            activeStableBubbles.RemoveAt(0);
+            if (oldest != null) Destroy(oldest);
+        }
+    }
 
     private void Awake()
     {

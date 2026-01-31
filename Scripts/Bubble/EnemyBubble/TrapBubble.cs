@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TrapBubble : MonoBehaviour
 {
-    public int damage= 10; // Ã¿´Î´¥Åö¿ÛÑªÁ¿
+    private int damage= 30; // Ã¿ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½Ñªï¿½ï¿½
 
     private void OnCollisionEnter2D(Collision2D other)
     {

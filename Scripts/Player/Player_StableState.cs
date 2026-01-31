@@ -50,8 +50,9 @@ public class Player_StableState : EntityState
             }
             if (player.Health != null)
             {
-                player.Health.TakeDamage(player.playerStableCost);
+                player.Health.Cost(player.playerStableCost);
             }
+            player.RegisterStableBubble(bubble);
         }
     }
     

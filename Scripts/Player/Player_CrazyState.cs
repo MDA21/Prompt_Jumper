@@ -41,7 +41,7 @@ public class Player_CrazyState : EntityState
             StartCooldown();
             if (player.Health != null)
             {
-                player.Health.Add(player.playerCrazyReward);
+                player.Health.Cost(player.playerCrazyCost);
             }
         }
     }
