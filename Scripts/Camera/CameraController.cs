@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour
     private float bottomPauseTimer;
     private float topLockTimer;
     private Camera cam;
+    private bool gameOverTriggered;
 
     private void Awake()
     {
@@ -37,6 +38,11 @@ public class CameraController : MonoBehaviour
             if (py <= bottom && bottomPauseTimer <= 0f)
             {
                 bottomPauseTimer = bottomPauseSeconds;
+            }
+            if (py < bottom && !gameOverTriggered)
+            {
+                gameOverTriggered = true;
+                SceneManager.LoadScene("GameOver");
             }
 
             if (py >= b2 && topLockTimer <= 0f)
