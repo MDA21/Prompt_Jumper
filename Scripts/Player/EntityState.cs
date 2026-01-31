@@ -12,6 +12,8 @@ public abstract class EntityState
     protected PlayerInputSet input;
     
     protected string stateName;
+    protected float cooldownDuration;
+    protected float cooldownTimer;
     // Start is called before the first frame update
     public EntityState(Player player, StateMachine stateMachine, string stateName)
     {
@@ -31,7 +33,11 @@ public abstract class EntityState
     // Update is called once per frame
     public virtual void Update()
     {
-        
+        if (cooldownTimer > 0f)
+        {
+            cooldownTimer -= Time.deltaTime;
+            if (cooldownTimer < 0f) cooldownTimer = 0f;
+        }
     }
 
     public virtual void Exit()
@@ -52,5 +58,25 @@ public abstract class EntityState
     public virtual void Skill()
     {
         
+    }
+
+    public void SetCooldown(float seconds)
+    {
+        cooldownDuration = Mathf.Max(0f, seconds);
+    }
+
+    protected bool CanUseSkill()
+    {
+        return cooldownTimer <= 0f;
+    }
+
+    protected void StartCooldown()
+    {
+        cooldownTimer = cooldownDuration;
+    }
+
+    public float CooldownRemaining()
+    {
+        return cooldownTimer;
     }
 }

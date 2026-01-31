@@ -16,11 +16,13 @@ public class Player_InvisibleState :  EntityState
         player.sr.sprite = player.invisibleSprite;
         player.SetTransparency(0.5f);
         player.StartInvisibleTimer();
+        SetCooldown(5f);
     }
 
     public override void Exit()
     {
         base.Exit();
         player.SetTransparency(1f);
+        StartCooldown();
     }
 }

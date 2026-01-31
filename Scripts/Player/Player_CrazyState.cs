@@ -14,24 +14,23 @@ public class Player_CrazyState : EntityState
     {
         base.Enter();
         player.sr.sprite = player.crazySprite;
+        SetCooldown(0.5f);
     }
 
     public override void Skill()
     {
         base.Skill();
+        if (!CanUseSkill()) return;
         if (player.crazyBubblePrefabs != null && player.crazyBubblePrefabs.Count > 0)
         {
-            // Get a random prefab
             int index = Random.Range(0, player.crazyBubblePrefabs.Count);
             GameObject prefab = player.crazyBubblePrefabs[index];
 
-            // Spawn at player's feet (position - 0.5y)
             Vector3 spawnPos = player.transform.position;
-            spawnPos.y -= 0.5f;
+            spawnPos.y -= (0.49f + 0.7f);
 
             GameObject bubble = Object.Instantiate(prefab, spawnPos, Quaternion.identity);
 
-            // Ensure it covers other layers
             SpriteRenderer sr = bubble.GetComponent<SpriteRenderer>();
             if (sr != null)
             {
@@ -39,6 +38,7 @@ public class Player_CrazyState : EntityState
             }
             
             player.StartCrazyBubbleRoutine(bubble);
+            StartCooldown();
         }
     }
 }
