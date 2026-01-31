@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI happinessText;
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateHappiness(int value)
     {
-        
+        if (happinessText != null)
+        {
+            happinessText.text = value.ToString();
+        }
     }
 }

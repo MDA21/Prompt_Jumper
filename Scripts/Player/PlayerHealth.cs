@@ -1,52 +1,36 @@
 using UnityEngine;
-using UnityEngine.UI; // ����UIѪ��
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
-    public Image healthBarFill;  // UIѪ����Fill����
+    public int maxValue = 100;
+    public int value = 100;
+    public UIManager ui;
 
-    private void Start()
+    private void Awake()
     {
-        currentHealth = 60;
-        UpdateHealthUI();
+        if (ui == null) ui = FindObjectOfType<UIManager>();
+        UpdateUI();
     }
 
+    public void Set(int v)
+    {
+        value = Mathf.Clamp(v, 0, maxValue);
+        UpdateUI();
+    }
+
+    public void Add(int delta)
+    {
+        Set(value + delta);
+    }
+    
     public void TakeDamage(int amount)
     {
-        currentHealth -= amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        UpdateHealthUI();
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        amount = Mathf.Abs(amount);
+        Add(-amount);
     }
 
-    private void UpdateHealthUI()
+    private void UpdateUI()
     {
-        if (healthBarFill != null)
-        {
-            healthBarFill.fillAmount = (float)currentHealth / maxHealth;
-        }
-    }
-
-    private void Update()
-    {
-        // ÿ3s�Ӳ��Կ�Ѫ10��
-        if (Time.frameCount % (3 * 60) == 0)
-        {
-            Debug.Log("��ǰѪ��: " + currentHealth);
-
-        }
-    }
-
-    private void Die()
-    {
-        Debug.Log("���������");
-        SceneManager.LoadScene("GameOver");
-        // ������Լ���������Ϸ�������߼�
+        if (ui != null) ui.UpdateHappiness(value);
     }
 }
