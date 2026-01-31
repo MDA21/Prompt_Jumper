@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3499311344048991732}
   - component: {fileID: 3956331507472163105}
   - component: {fileID: 6078058078269159852}
-  m_Layer: 8
+  m_Layer: 6
   m_HasEditorInfo: 1
   m_Name: CrazyBubble
   m_TagString: Untagged

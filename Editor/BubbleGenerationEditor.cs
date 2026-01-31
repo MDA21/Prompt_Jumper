@@ -8,7 +8,7 @@ public static class BubbleFromTxtGenerator
     [MenuItem("Tools/Bubble/Generate From Txt")]
     public static void GenerateFromTxt()
     {
-        string txtPath = "Assets/Data/Data.txt";
+        string txtPath = "Assets/Resources/Data/Data.txt";
         string prefabPath = "Assets/Prefabs/Bubble.prefab";
 
         // 1. 读取 prefab
@@ -60,7 +60,7 @@ public static class BubbleFromTxtGenerator
 
             // 5. 调用你已有的逻辑
             BubbleView view = bubble.GetComponent<BubbleView>();
-            view.setBubble(text, type);
+            view.setBubbleText(text);
         }
 
         // 6. 标记 Scene 可保存
