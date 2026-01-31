@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 797346059979993234}
   - component: {fileID: 1104081279775619249}
   - component: {fileID: 5063729813514306431}
+  - component: {fileID: 3747558556527658349}
   m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: MissileBubble
@@ -476,3 +477,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &3747558556527658349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8761232555559376721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e68027eb5d6004d9537d08e51b47ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 603229834789587844}
+  maxTextWidth: 4.5
+  maxTextPerLine: 25
+  padding: {x: 0.6, y: 0.4}

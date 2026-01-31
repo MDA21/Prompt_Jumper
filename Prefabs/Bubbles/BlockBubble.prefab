@@ -295,6 +295,8 @@ GameObject:
   - component: {fileID: 119235184168069102}
   - component: {fileID: 3394034725545884228}
   - component: {fileID: 6824919627600409862}
+  - component: {fileID: -6726273970227719367}
+  - component: {fileID: 1602012928405386046}
   m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: BlockBubble
@@ -312,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 1881374819299729738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 0.61, z: 0}
+  m_LocalPosition: {x: -5.0627313, y: -1.8201778, z: 0}
   m_LocalScale: {x: 1, y: 0.5191, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -461,3 +463,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &-6726273970227719367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881374819299729738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e68027eb5d6004d9537d08e51b47ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  maxTextWidth: 4.5
+  maxTextPerLine: 25
+  padding: {x: 0.6, y: 0.4}
+--- !u!114 &1602012928405386046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881374819299729738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e68027eb5d6004d9537d08e51b47ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 4259124098248661873}
+  maxTextWidth: 4.5
+  maxTextPerLine: 25
+  padding: {x: 0.6, y: 0.4}
