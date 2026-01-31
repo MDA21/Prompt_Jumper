@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxValue = 100;
-    public int value = 100;
+    private int value = 60;
     public UIManager ui;
 
     private void Awake()
@@ -16,6 +16,10 @@ public class PlayerHealth : MonoBehaviour
     {
         value = Mathf.Clamp(v, 0, maxValue);
         UpdateUI();
+        if (value == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     public void Add(int delta)
@@ -27,6 +31,12 @@ public class PlayerHealth : MonoBehaviour
     {
         amount = Mathf.Abs(amount);
         Add(-amount);
+    }
+
+    public void Heal(int amount)
+    {
+        value = Mathf.Clamp(value + amount, 0, maxValue);
+        UpdateUI();
     }
 
     private void UpdateUI()

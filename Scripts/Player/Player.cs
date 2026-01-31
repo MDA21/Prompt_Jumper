@@ -29,7 +29,8 @@ public class Player : MonoBehaviour
     
     [SerializeField]public bool groundDetected { get; private set; }
     [SerializeField]public bool crazyDetected { get; private set; }
-    
+
+    public PlayerHealth Health { get; private set; }
 
     public Player_NormalState normalState { get; private set; }
     public Player_StableState stableState { get; private set; }
@@ -43,10 +44,14 @@ public class Player : MonoBehaviour
     [SerializeField]private LayerMask whatIsCrazy;
     private bool canBounce = true;
 
+    public int playerCrazyReward = 7;
+    public int playerStableCost = 5;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        Health = GetComponent<PlayerHealth>();
         
         input = new PlayerInputSet();
         stateMachine = new StateMachine();
@@ -137,7 +142,10 @@ public class Player : MonoBehaviour
     private void OnSkillPerformed(InputAction.CallbackContext context)
     {
         // Debug.Log("Skill Performed");
-        stateMachine.CurrentState.Skill();
+        if (stateMachine != null && stateMachine.CurrentState != null)
+        {
+            stateMachine.CurrentState.Skill();
+        }
     }
 
     private void OnInvisiblePerformed(InputAction.CallbackContext context)

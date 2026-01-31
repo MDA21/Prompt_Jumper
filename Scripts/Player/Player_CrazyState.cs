@@ -39,6 +39,10 @@ public class Player_CrazyState : EntityState
             
             player.StartCrazyBubbleRoutine(bubble);
             StartCooldown();
+            if (player.Health != null)
+            {
+                player.Health.Add(player.playerCrazyReward);
+            }
         }
     }
 }

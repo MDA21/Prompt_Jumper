@@ -48,6 +48,10 @@ public class Player_StableState : EntityState
             {
                 sr.sortingOrder = 20; // High sorting order as per design doc
             }
+            if (player.Health != null)
+            {
+                player.Health.TakeDamage(player.playerStableCost);
+            }
         }
     }
     
