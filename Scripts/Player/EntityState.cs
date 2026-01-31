@@ -48,4 +48,9 @@ public abstract class EntityState
             player.SetVelocity(rb.velocity.x, player.jumpForce);
         }
     }
+
+    public virtual void Skill()
+    {
+        
+    }
 }

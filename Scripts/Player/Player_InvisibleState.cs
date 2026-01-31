@@ -13,6 +13,6 @@ public class Player_InvisibleState :  EntityState
     public override void Enter()
     {
         base.Enter();
-        player.sr.sprite = player.normalSprite;
+        player.sr.sprite = player.invisibleSprite;
     }
 }

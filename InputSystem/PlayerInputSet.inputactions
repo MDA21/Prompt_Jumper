@@ -56,7 +56,7 @@
                 {
                     "name": "",
                     "id": "fb0c6485-2c64-41ff-8078-05b94ec0718a",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Player",
@@ -111,7 +111,7 @@
                 {
                     "name": "",
                     "id": "833dd217-a2c4-488a-8c3f-55369b392a8c",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -144,10 +144,10 @@
                 {
                     "name": "",
                     "id": "0b8504f5-ad5e-4da9-9d29-2191008c9143",
-                    "path": "",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Player",
                     "action": "Change",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -155,7 +155,7 @@
                 {
                     "name": "",
                     "id": "41d180e8-ce06-4578-8ec6-ed49bb267c7b",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Player",
