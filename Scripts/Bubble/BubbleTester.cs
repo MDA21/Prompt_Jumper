@@ -16,7 +16,7 @@ public class BubbleTester : MonoBehaviour
     void Spawn(string message, Vector3 position, BubbleType type)
     {
         BubbleView bubble = Instantiate(bubblePrefab, position, Quaternion.identity);
-        bubble.setBubble(message, type);
+        bubble.setBubbleText(message);
     }
 
 }

@@ -43,11 +43,11 @@ public class BubbleView : MonoBehaviour
     }
 
 
-    public void setBubble(string message, BubbleType type)
+    public void setBubbleText(string message)
     {
         InitIfNeeded();
 
-        Color color = setColor(type);
+        
         message = processMessage(message);
         text.text = message;
 
@@ -73,8 +73,9 @@ public class BubbleView : MonoBehaviour
 
 
         Tail.localPosition = new Vector3(randomX, 0f, 0f);
-        Tail.GetComponent<SpriteRenderer>().color = color;
-        sr.color = color;
+        //Color color = setColor(type);
+        //Tail.GetComponent<SpriteRenderer>().color = color;
+        //sr.color = color;
     }
 
 
@@ -90,28 +91,28 @@ public class BubbleView : MonoBehaviour
         return message;
     }
 
-    private Color setColor(BubbleType type)
-    {
-        switch (type)
-        {
-            case BubbleType.Trap:
-                return Color.red;
+    //private Color setColor(BubbleType type)
+    //{
+    //    switch (type)
+    //    {
+    //        case BubbleType.Trap:
+    //            return Color.red;
 
-            case BubbleType.Missile:
-                return new Color(1f, 0.6f, 0f);   // ³È
+    //        case BubbleType.Missile:
+    //            return new Color(1f, 0.6f, 0f);   // ³È
 
-            case BubbleType.Mine:
-                return Color.green;
+    //        case BubbleType.Mine:
+    //            return Color.green;
 
-            case BubbleType.Block:
-                return Color.white;
+    //        case BubbleType.Block:
+    //            return Color.white;
 
-            case BubbleType.Ghost:
-                return Color.gray;
+    //        case BubbleType.Ghost:
+    //            return Color.gray;
 
-            default:
-                return Color.white;
-        }
-    }
+    //        default:
+    //            return Color.white;
+    //    }
+    //}
 
 }
