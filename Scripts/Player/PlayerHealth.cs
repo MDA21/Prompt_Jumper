@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI; // ÓÃÓÚUIÑªÌõ
+using UnityEngine.UI; // ï¿½ï¿½ï¿½ï¿½UIÑªï¿½ï¿½
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    public Image healthBarFill;  // UIÑªÌõµÄFill¶ÔÏó
+    public Image healthBarFill;  // UIÑªï¿½ï¿½ï¿½ï¿½Fillï¿½ï¿½ï¿½ï¿½
 
     private void Start()
     {
@@ -35,17 +35,18 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        // Ã¿3sÖÓ²âÊÔ¿ÛÑª10µã
+        // Ã¿3sï¿½Ó²ï¿½ï¿½Ô¿ï¿½Ñª10ï¿½ï¿½
         if (Time.frameCount % (3 * 60) == 0)
         {
-            Debug.Log("µ±Ç°ÑªÁ¿: " + currentHealth);
+            Debug.Log("ï¿½ï¿½Ç°Ñªï¿½ï¿½: " + currentHealth);
 
         }
     }
 
     private void Die()
     {
-        Debug.Log("Íæ¼ÒËÀÍö£¡");
-        // ÕâÀï¿ÉÒÔ¼ÓÖØÉú¡¢ÓÎÏ·½áÊøµÈÂß¼­
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        SceneManager.LoadScene("GameOver");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½
     }
 }
