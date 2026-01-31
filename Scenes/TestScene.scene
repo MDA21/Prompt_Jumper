@@ -455,8 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1233679032a1b3045a9bdc72caee5d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSprite: {fileID: 21300000, guid: 2fef7494684c37c4a8cd840032310c3d, type: 3}
-  stableSprite: {fileID: 21300000, guid: 11126d79e7d8498428b097063433d2b7, type: 3}
+  stableSprite: {fileID: 21300000, guid: 6bc7c848b671764489091f1db91acaeb, type: 3}
   crazySprite: {fileID: 21300000, guid: 789e96b7a9b046041b7d185d6ef6ee60, type: 3}
   invisibleSprite: {fileID: 21300000, guid: d9435a4cc5590a24ea5d2359eef18c25, type: 3}
   hurtSprite: {fileID: 21300000, guid: 5127cb238fcccc74887981d5fa6c4e68, type: 3}
@@ -466,8 +465,8 @@ MonoBehaviour:
   - {fileID: 2823016635356195340, guid: 9419e7f9e7022c446a96f53dbcad1dc7, type: 3}
   withdrawMessagePrefab: {fileID: 0}
   moveSpeed: 5
-  jumpForce: 10
-  crazyBubbleBounceForce: 15
+  jumpForce: 12
+  crazyBubbleBounceForce: 18
   groundCheckDistance: 0.55
   whatIsGround:
     serializedVersion: 2
@@ -475,8 +474,8 @@ MonoBehaviour:
   whatIsCrazy:
     serializedVersion: 2
     m_Bits: 256
-  playerCrazyCost: 10
-  playerStableCost: 5
+  playerCrazyCost: 25
+  playerStableCost: 20
   maxStableBubbles: 3
 --- !u!114 &364434460
 MonoBehaviour:
@@ -542,7 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxValue: 100
   ui: {fileID: 0}
-  regenPerSecond: 10
+  regenPerSecond: 5
 --- !u!1 &430587814
 GameObject:
   m_ObjectHideFlags: 0
