@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using System.IO;
+using System.Collections.Generic;
 
 public static class BubbleFromTxtGenerator
 {
@@ -10,25 +11,32 @@ public static class BubbleFromTxtGenerator
     {
         string txtPath = "Assets/Resources/Data/Data.txt";
 
-        // 1. 根据 BubbleType 创建字典映射 prefab 路径
-        var prefabDict = new System.Collections.Generic.Dictionary<BubbleType, string>()
-        {
-            { BubbleType.Trap, "Assets/Prefabs/TrapBubble.prefab" },
-            { BubbleType.Block, "Assets/Prefabs/BlockBubble.prefab" },
-            { BubbleType.Missile, "Assets/Prefabs/MissileBubble.prefab" },
-            { BubbleType.Ghost, "Assets/Prefabs/GhostBubble.prefab" },
-        };
+        // 1. 准备 prefab 字典
+        Dictionary<BubbleType, GameObject> prefabDict = new Dictionary<BubbleType, GameObject>();
 
-        // 2. 读取 txt
+        foreach (BubbleType type in System.Enum.GetValues(typeof(BubbleType)))
+        {
+            string prefabPath = $"Assets/Prefabs/Bubbles/{type}Bubble.prefab";
+            GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
+
+            if (prefab == null)
+            {
+                Debug.LogError($"Prefab not found for type {type} at path {prefabPath}");
+                continue;
+            }
+
+            prefabDict[type] = prefab;
+        }
+
         if (!File.Exists(txtPath))
         {
-            Debug.LogError("Txt file not found: " + txtPath);
+            Debug.LogError("Txt file not found");
             return;
         }
 
         string[] lines = File.ReadAllLines(txtPath);
 
-        // 3. 父物体
+        // 2. 父物体
         GameObject root = new GameObject("GeneratedBubbles");
         Undo.RegisterCreatedObjectUndo(root, "Create Bubble Root");
 
@@ -37,56 +45,51 @@ public static class BubbleFromTxtGenerator
             if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
                 continue;
 
-            // text|x|y|type
+            // text | posx | posy | type
             string[] parts = line.Split('|');
-
             if (parts.Length < 4)
             {
-                Debug.LogWarning("Invalid line: " + line);
+                Debug.LogWarning($"Invalid line format: {line}");
                 continue;
             }
 
-            string text = parts[0];
-            float x = float.Parse(parts[1]);
-            float y = float.Parse(parts[2]);
-            BubbleType type = (BubbleType)System.Enum.Parse(typeof(BubbleType), parts[3], true);
-
-            // 4. 根据 type 获取 prefab 路径
-            if (!prefabDict.TryGetValue(type, out string prefabPath))
+            string text = parts[0].Trim();
+            if (!float.TryParse(parts[1].Trim(), out float x) || !float.TryParse(parts[2].Trim(), out float y))
             {
-                Debug.LogWarning("Prefab not found for type: " + type);
+                Debug.LogWarning($"Invalid position in line: {line}");
                 continue;
             }
 
-            GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
-
-            if (prefab == null)
+            if (!System.Enum.TryParse(parts[3].Trim(), true, out BubbleType type))
             {
-                Debug.LogError("Prefab missing at path: " + prefabPath);
+                Debug.LogWarning($"Invalid BubbleType in line: {line}");
                 continue;
             }
 
-            // 5. 实例化 prefab
+            if (!prefabDict.TryGetValue(type, out GameObject prefab))
+            {
+                Debug.LogWarning($"No prefab found for type {type}, skipping line.");
+                continue;
+            }
+
+            // 3. 实例化 prefab
             GameObject bubble = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
             Undo.RegisterCreatedObjectUndo(bubble, "Create Bubble");
 
             bubble.transform.position = new Vector3(x, y, 0);
             bubble.transform.SetParent(root.transform);
 
-            // 6. 调用 BubbleView 设置文字
+            // 4. 设置文本
             BubbleView view = bubble.GetComponent<BubbleView>();
             if (view != null)
-            {
                 view.setBubbleText(text);
-            }
             else
-            {
-                Debug.LogWarning("Bubble prefab missing BubbleView component: " + prefab.name);
-            }
+                Debug.LogWarning($"BubbleView component not found on prefab for type {type}");
         }
 
-        // 7. 标记 Scene 可保存
-        EditorSceneManager.MarkSceneDirty(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
+        EditorSceneManager.MarkSceneDirty(
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene()
+        );
 
         Debug.Log("Bubbles generated from txt.");
     }

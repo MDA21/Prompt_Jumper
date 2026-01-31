@@ -15,28 +15,24 @@ public class BubbleView : MonoBehaviour
 
 
 
-    private Transform DialogSquare;
     private Transform Tail;
     private BoxCollider2D col;
     private SpriteRenderer sr;
 
     void Awake()
     {
-        DialogSquare = transform.Find("Dialog");
         Tail = transform.Find("Tail");
-        sr = DialogSquare.GetComponent<SpriteRenderer>();
-        col = DialogSquare.GetComponent<BoxCollider2D>();
+        sr = GetComponent<SpriteRenderer>();
+        col = GetComponent<BoxCollider2D>();
     }
 
     public void InitIfNeeded()
     {
-        if (DialogSquare != null) return;
+        
+       Tail = transform.Find("Tail");
 
-        DialogSquare = transform.Find("Dialog");
-        Tail = transform.Find("Tail");
-
-        sr = DialogSquare.GetComponent<SpriteRenderer>();
-        col = DialogSquare.GetComponent<BoxCollider2D>();
+        sr = GetComponent<SpriteRenderer>();
+        col = GetComponent<BoxCollider2D>();
 
         if (text == null)
             text = GetComponentInChildren<TMP_Text>();
@@ -47,7 +43,7 @@ public class BubbleView : MonoBehaviour
     {
         InitIfNeeded();
 
-        
+
         message = processMessage(message);
         text.text = message;
 
