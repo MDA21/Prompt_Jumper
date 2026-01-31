@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public PlayerInputSet input { get; private set; }
     private StateMachine stateMachine;
 
-    public Sprite normalSprite;
+    // public Sprite normalSprite;
     public Sprite stableSprite;
     public Sprite crazySprite;
     public Sprite invisibleSprite;
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 
     public PlayerHealth Health { get; private set; }
 
-    public Player_NormalState normalState { get; private set; }
+    // public Player_NormalState normalState { get; private set; }
     public Player_StableState stableState { get; private set; }
     public Player_CrazyState crazyState { get; private set; }
     public Player_InvisibleState invisibleState { get; private set; }
@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
         input = new PlayerInputSet();
         stateMachine = new StateMachine();
         
-        normalState = new Player_NormalState(this, stateMachine, "normal");
+        // normalState = new Player_NormalState(this, stateMachine, "normal");
         stableState = new Player_StableState(this, stateMachine, "stable");
         crazyState = new Player_CrazyState(this, stateMachine, "crazy");
         invisibleState = new Player_InvisibleState(this, stateMachine, "invisible");
@@ -149,17 +149,13 @@ public class Player : MonoBehaviour
     
     private void CycleBetweenBasicStates()
     {
-        if (stateMachine.CurrentState == normalState)
-        {
-            stateMachine.ChangeState(stableState);
-        }
-        else if (stateMachine.CurrentState == stableState)
+        if (stateMachine.CurrentState == stableState)
         {
             stateMachine.ChangeState(crazyState);
         }
         else if (stateMachine.CurrentState == crazyState)
         {
-            stateMachine.ChangeState(normalState);
+            stateMachine.ChangeState(stableState);
         }
 
     }
@@ -180,7 +176,7 @@ public class Player : MonoBehaviour
     
     private void Start()
     {
-        stateMachine.Initialize(normalState);
+        stateMachine.Initialize(stableState);
     }
 
     private void Update()

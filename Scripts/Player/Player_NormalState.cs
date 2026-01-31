@@ -12,6 +12,6 @@ public class Player_NormalState : EntityState
     public override void Enter()
     {
         base.Enter();
-        player.sr.sprite = player.normalSprite;
+        //player.sr.sprite = player.normalSprite;
     }
 }
