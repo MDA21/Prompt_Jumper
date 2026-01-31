@@ -14,5 +14,13 @@ public class Player_InvisibleState :  EntityState
     {
         base.Enter();
         player.sr.sprite = player.invisibleSprite;
+        player.SetTransparency(0.5f);
+        player.StartInvisibleTimer();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        player.SetTransparency(1f);
     }
 }

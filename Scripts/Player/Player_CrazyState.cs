@@ -37,6 +37,8 @@ public class Player_CrazyState : EntityState
             {
                 sr.sortingOrder = 20;
             }
+            
+            player.StartCrazyBubbleRoutine(bubble);
         }
     }
 }

@@ -19,8 +19,9 @@ public class Player : MonoBehaviour
     [Header("Bubble Prefabs")]
     public List<GameObject> stableBubblePrefabs;
     public List<GameObject> crazyBubblePrefabs;
+    public GameObject withdrawMessagePrefab;
 
-    [Header("Movement Details")]
+    [Header("Interaction Settings")]
     public float moveSpeed = 5f;
     [FormerlySerializedAs("jumpSpeed")] public float jumpForce = 13f;
     public float _moveDir {get; private set;}
@@ -66,6 +67,7 @@ public class Player : MonoBehaviour
         input.Player.Jump.performed += OnJumpPerformed;
         input.Player.Change.performed += OnChangePerformed;
         input.Player.Skill.performed += OnSkillPerformed;
+        input.Player.Invisible.performed += OnInvisiblePerformed;
         
 
     }
@@ -80,6 +82,7 @@ public class Player : MonoBehaviour
             input.Player.Jump.performed -= OnJumpPerformed;
             input.Player.Change.performed -= OnChangePerformed;
             input.Player.Skill.performed -= OnSkillPerformed;
+            input.Player.Invisible.performed -= OnInvisiblePerformed;
             
             input.Disable();
         }
@@ -135,6 +138,11 @@ public class Player : MonoBehaviour
         // Debug.Log("Skill Performed");
         stateMachine.CurrentState.Skill();
     }
+
+    private void OnInvisiblePerformed(InputAction.CallbackContext context)
+    {
+        stateMachine.ChangeState(invisibleState);
+    }
     
     private void Start()
     {
@@ -171,6 +179,49 @@ public class Player : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y - groundCheckDistance));
+    }
+
+    public void StartCrazyBubbleRoutine(GameObject bubble)
+    {
+        StartCoroutine(CrazyBubbleRoutine(bubble));
+    }
+
+    private IEnumerator CrazyBubbleRoutine(GameObject bubble)
+    {
+        yield return new WaitForSeconds(3f);
+        if (bubble != null)
+        {
+            Vector3 pos = bubble.transform.position;
+            Destroy(bubble);
+            if (withdrawMessagePrefab != null)
+            {
+                Instantiate(withdrawMessagePrefab, pos, Quaternion.identity);
+            }
+        }
+    }
+
+    public void StartInvisibleTimer()
+    {
+        StartCoroutine(InvisibleTimer());
+    }
+
+    private IEnumerator InvisibleTimer()
+    {
+        yield return new WaitForSeconds(3f);
+        if (stateMachine.CurrentState == invisibleState)
+        {
+            stateMachine.ChangeState(stableState);
+        }
+    }
+
+    public void SetTransparency(float alpha)
+    {
+        if (sr != null)
+        {
+            Color color = sr.color;
+            color.a = alpha;
+            sr.color = color;
+        }
     }
 
     
