@@ -8,15 +8,15 @@ public class BubbleTester : MonoBehaviour
 
     private void Start()
     {
-        Spawn("Hello, World!", new Vector3(-3, 2, 0));
-        Spawn("This is a longer message to test the bubble sizing functionality.", new Vector3(10, 0, 0));
-        Spawn("Short msg", new Vector3(3, -3, 0));
+        Spawn("Hello, World!", new Vector3(-3, 2, 0), BubbleType.Mine);
+        Spawn("This is a longer message to test the bubble sizing functionality.", new Vector3(10, 0, 0), BubbleType.Trap);
+        Spawn("Short msg", new Vector3(3, -3, 0), BubbleType.Missile);
     }
 
-    void Spawn(string message, Vector3 position)
+    void Spawn(string message, Vector3 position, BubbleType type)
     {
         BubbleView bubble = Instantiate(bubblePrefab, position, Quaternion.identity);
-        bubble.SetText(message);
+        bubble.setBubble(message, type);
     }
 
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-[RequireComponent(typeof(BoxCollider2D))]
 public class BubbleView : MonoBehaviour
 {
     [Header("References")]
@@ -13,6 +12,8 @@ public class BubbleView : MonoBehaviour
     public float maxTextWidth = 4.5f;
     public int maxTextPerLine = 25;
     public Vector2 padding = new Vector2(0.6f, 0.4f);
+
+
 
     private Transform DialogSquare;
     private Transform Tail;
@@ -24,51 +25,93 @@ public class BubbleView : MonoBehaviour
         DialogSquare = transform.Find("Dialog");
         Tail = transform.Find("Tail");
         sr = DialogSquare.GetComponent<SpriteRenderer>();
-        col = GetComponent<BoxCollider2D>();
+        col = DialogSquare.GetComponent<BoxCollider2D>();
     }
 
-    public void SetText(string message)
+    public void InitIfNeeded()
     {
-        // Set the text
-        text.text = message;
-        processMessage(message);
+        if (DialogSquare != null) return;
 
-        // 限制文本最大宽度
+        DialogSquare = transform.Find("Dialog");
+        Tail = transform.Find("Tail");
+
+        sr = DialogSquare.GetComponent<SpriteRenderer>();
+        col = DialogSquare.GetComponent<BoxCollider2D>();
+
+        if (text == null)
+            text = GetComponentInChildren<TMP_Text>();
+    }
+
+
+    public void setBubble(string message, BubbleType type)
+    {
+        InitIfNeeded();
+
+        Color color = setColor(type);
+        message = processMessage(message);
+        text.text = message;
+
         text.rectTransform.sizeDelta = new Vector2(maxTextWidth, 100f);
 
-        // 计算文本真实排版尺寸
-        Vector2 textSize = text.GetPreferredValues();
+        text.ForceMeshUpdate();
+        Bounds bounds = text.bounds;
 
-        // 计算bubble尺寸
-        Vector2 bubbleSize = textSize + padding;
+        Vector2 bubbleSize = new Vector2(
+            bounds.size.x + padding.x,
+            bounds.size.y + padding.y
+        );
 
-        // 调整sprite尺寸
         sr.size = bubbleSize;
-
-        // 调整碰撞体尺寸
         col.size = bubbleSize;
         col.offset = Vector2.zero;
 
-        // 调整文本位置
         text.transform.localPosition = Vector3.zero;
 
-        // 计算左右边界
         float left = -bubbleSize.x / 2f;
         float right = bubbleSize.x / 2f;
-
-        // 调整Tail位置
         float randomX = Random.value < 0.5f ? left : right;
-        Tail.localPosition = new Vector3(randomX, 0, 0f);
+
+
+        Tail.localPosition = new Vector3(randomX, 0f, 0f);
+        Tail.GetComponent<SpriteRenderer>().color = color;
+        sr.color = color;
     }
 
-    void processMessage(string message)
+
+    private string processMessage(string message)
     {
         if (message.Length <= maxTextPerLine)
-            return;
+            return message;
         for (int i = maxTextPerLine; i < message.Length; i += maxTextPerLine)
         {
             message = message.Insert(i, "\n");
             i++;
         }
+        return message;
     }
+
+    private Color setColor(BubbleType type)
+    {
+        switch (type)
+        {
+            case BubbleType.Trap:
+                return Color.red;
+
+            case BubbleType.Missile:
+                return new Color(1f, 0.6f, 0f);   // 橙
+
+            case BubbleType.Mine:
+                return Color.green;
+
+            case BubbleType.Block:
+                return Color.white;
+
+            case BubbleType.Ghost:
+                return Color.gray;
+
+            default:
+                return Color.white;
+        }
+    }
+
 }

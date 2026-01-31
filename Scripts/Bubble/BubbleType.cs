@@ -1,0 +1,8 @@
+public enum BubbleType
+{
+    Trap,     // ºì
+    Missile, // ³È
+    Mine,    // ÂÌ
+    Block,   // °×
+    Ghost    // »Ò
+}
