@@ -20,16 +20,6 @@ public class AudioManager : MonoBehaviour
     [Header("Sound Settings")]
     public SoundGroup[] sounds;
 
-    [System.Serializable]
-    public class SceneMusicMapping
-    {
-        public string sceneName;
-        public string musicName;
-    }
-
-    [Header("Scene Music Mappings")]
-    public List<SceneMusicMapping> sceneMusicMappings;
-
     [Header("Audio Sources")]
     public AudioSource sfxSource;
     public AudioSource musicSource;
@@ -64,22 +54,10 @@ public class AudioManager : MonoBehaviour
 
     private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
     {
-        if (sceneMusicMappings == null) return;
-
-        foreach (var mapping in sceneMusicMappings)
+        // Automatically try to play music matching the scene name
+        if (soundDict != null && soundDict.ContainsKey(scene.name))
         {
-            if (mapping.sceneName == scene.name)
-            {
-                if (string.IsNullOrEmpty(mapping.musicName))
-                {
-                    StopMusic();
-                }
-                else
-                {
-                    Play(mapping.musicName);
-                }
-                break;
-            }
+            Play(scene.name);
         }
     }
 
@@ -102,6 +80,13 @@ public class AudioManager : MonoBehaviour
         {
             musicSource = gameObject.AddComponent<AudioSource>();
             musicSource.loop = true;
+        }
+
+        // Try to play music for the initial scene
+        string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (soundDict.ContainsKey(currentSceneName))
+        {
+            Play(currentSceneName);
         }
     }
 
