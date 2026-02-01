@@ -52,6 +52,10 @@ public class Player_StableState : EntityState
             {
                 player.Health.Cost(player.playerStableCost);
             }
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.Play("Stable");
+            }
             player.RegisterStableBubble(bubble);
         }
     }

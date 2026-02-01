@@ -16,6 +16,7 @@ public class Player_InvisibleState :  EntityState
         player.sr.sprite = player.invisibleSprite;
         player.SetTransparency(0.5f);
         player.StartInvisibleTimer();
+        AudioManager.Instance.Play("Invisible", 1, 1);
         SetCooldown(5f);
     }
 

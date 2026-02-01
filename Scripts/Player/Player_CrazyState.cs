@@ -43,6 +43,10 @@ public class Player_CrazyState : EntityState
             {
                 player.Health.Cost(player.playerCrazyCost);
             }
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.Play("Crazy");
+            }
         }
     }
 }

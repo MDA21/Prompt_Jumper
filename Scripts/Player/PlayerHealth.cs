@@ -76,6 +76,12 @@ public class PlayerHealth : MonoBehaviour
     {
         if (player == null || player.sr == null) return;
         if (player.IsInvisible) return;
+        
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.Play("Hurt");
+        }
+
         if (hurtRoutine != null) StopCoroutine(hurtRoutine);
         hurtRoutine = StartCoroutine(HurtFlashRoutine());
     }

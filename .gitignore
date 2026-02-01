@@ -8,3 +8,6 @@ TextMesh Pro/Resources/Fonts & Materials/
 # 精确忽略一个文件
 msyh SDF.asset
 msyh SDF.asset.meta
+
+.ttf
+.ttf.meta
