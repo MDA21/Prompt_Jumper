@@ -14,7 +14,7 @@ public class Player_CrazyState : EntityState
     {
         base.Enter();
         player.sr.sprite = player.crazySprite;
-        SetCooldown(0.5f);
+        SetCooldown(2f);
     }
 
     public override void Skill()
@@ -41,7 +41,7 @@ public class Player_CrazyState : EntityState
             StartCooldown();
             if (player.Health != null)
             {
-                player.Health.Cost(player.playerCrazyCost);
+                player.Health.Heal(player.playerCrazyCost);
             }
         }
     }
