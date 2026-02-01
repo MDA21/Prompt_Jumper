@@ -32,6 +32,17 @@ public class GameOverController : MonoBehaviour
         }
     }
 
+    public void ReturnToTrainCort()
+    {
+        SceneManager.LoadScene("TrainCort");
+        
+        // Optional: click sound
+        if (AudioManager.Instance != null)
+        {
+            // AudioManager.Instance.Play("UIClick"); 
+        }
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit Game");

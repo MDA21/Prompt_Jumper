@@ -5,7 +5,7 @@ public class MainMenuController : MonoBehaviour
 {
     [Header("Scene Settings")]
     [Tooltip("The name of the scene to load when Start is pressed")]
-    public string targetSceneName = "Level1";
+    public string targetSceneName = "MainMenu";
 
     public void StartGame()
     {
