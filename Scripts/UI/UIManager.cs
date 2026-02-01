@@ -10,7 +10,14 @@ public class UIManager : MonoBehaviour
     {
         if (happinessText != null)
         {
-            happinessText.text = value.ToString();
+            if (happinessText.text != value.ToString())
+            {
+                 happinessText.text = value.ToString();
+                 if (AudioManager.Instance != null)
+                 {
+                     AudioManager.Instance.Play("ui_update");
+                 }
+            }
         }
     }
 }

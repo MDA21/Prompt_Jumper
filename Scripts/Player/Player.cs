@@ -59,6 +59,10 @@ public class Player : MonoBehaviour
     [Header("Stable Bubble Limit")]
     public int maxStableBubbles = 3;
     private List<GameObject> activeStableBubbles = new List<GameObject>();
+
+    // Audio related
+    private bool wasGrounded;
+
     public void RegisterStableBubble(GameObject bubble)
     {
         if (bubble == null) return;
@@ -184,6 +188,21 @@ public class Player : MonoBehaviour
         MoveLogic();
         HandleCollisionDetection();
         stateMachine.UpdateActiveState();
+        
+        CheckLandAudio();
+    }
+    
+    private void CheckLandAudio()
+    {
+        if (!wasGrounded && groundDetected)
+        {
+            // Just landed
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.Play("Land");
+            }
+        }
+        wasGrounded = groundDetected;
     }
     
     public void SetVelocity(float xVelocity, float yVelocity)
@@ -232,7 +251,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator InvisibleTimer()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(6f);
         if (stateMachine.CurrentState == invisibleState)
         {
             stateMachine.ChangeState(stableState);
