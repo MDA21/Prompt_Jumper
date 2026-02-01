@@ -27,7 +27,7 @@ public class Player_CrazyState : EntityState
             GameObject prefab = player.crazyBubblePrefabs[index];
 
             Vector3 spawnPos = player.transform.position;
-            spawnPos.y -= (0.35f + 0.7f);
+            spawnPos.y -= (0.39f + 0.7f);
 
             GameObject bubble = Object.Instantiate(prefab, spawnPos, Quaternion.identity);
 

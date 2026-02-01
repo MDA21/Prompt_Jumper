@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 13f;
     public float _moveDir {get; private set;}
-    public float crazyBubbleBounceForce = 20f;
+    public float crazyBubbleBounceForce = 15f;
     
     public bool groundDetected;
     public bool crazyDetected;
