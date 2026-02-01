@@ -34,7 +34,7 @@ public class GameOverController : MonoBehaviour
 
     public void ReturnToTrainCort()
     {
-        SceneManager.LoadScene("TrainCort");
+        SceneManager.LoadScene("TrainCourt");
         
         // Optional: click sound
         if (AudioManager.Instance != null)

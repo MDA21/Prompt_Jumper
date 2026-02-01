@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4251224736623032346}
   - component: {fileID: 1057265444614080215}
   - component: {fileID: 4190861558541571349}
-  m_Layer: 7
+  m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: GreenBubble_5
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 5460565400080252850}
   - component: {fileID: 258620905417164089}
   - component: {fileID: 3155246643572712766}
-  m_Layer: 7
+  m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -193,7 +193,7 @@ RectTransform:
   m_GameObject: {fileID: 5529460000940950509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.28, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8640426422789235632}
@@ -247,7 +247,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 21
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &258620905417164089
 MonoBehaviour:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u8C22\u8C22"
+  m_text: "\u611F\u8C22\u6307\u5BFC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 06d53c7eaaa5cf742a59ee5699227865, type: 2}
   m_sharedMaterial: {fileID: -6086202925803673095, guid: 06d53c7eaaa5cf742a59ee5699227865, type: 2}
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
