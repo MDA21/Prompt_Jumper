@@ -323,6 +323,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2312548070882596580, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6651605546536025738, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -487,6 +491,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8157222772851874683, guid: 5e40c634868e6da459f13f64a3be91cc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -559,6 +567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -736,6 +748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -812,6 +828,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -870,6 +898,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1123,6 +1163,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1181,7 +1233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &67264523
 Rigidbody2D:
   serializedVersion: 4
@@ -1468,6 +1519,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1520,6 +1583,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7928821609858062540, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 8243512304757654773, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.330001
@@ -1632,6 +1699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1720,6 +1791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1752,6 +1827,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 36868028518092984, guid: fcc037a634d093349b47ab05fe80a68f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1541750686883432151, guid: fcc037a634d093349b47ab05fe80a68f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.28
@@ -2059,6 +2138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -2103,6 +2186,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2699133166297323286, guid: f2063b891f3d3e2449e156ca1213a86c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 4322933750221587573, guid: f2063b891f3d3e2449e156ca1213a86c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.711735
@@ -2205,7 +2292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &131860625
 Rigidbody2D:
   serializedVersion: 4
@@ -2363,6 +2449,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 36868028518092984, guid: fcc037a634d093349b47ab05fe80a68f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1541750686883432151, guid: fcc037a634d093349b47ab05fe80a68f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.2
@@ -2718,6 +2808,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2312548070882596580, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6651605546536025738, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2798,6 +2892,271 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
+--- !u!1 &189131392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 189131399}
+  - component: {fileID: 189131398}
+  - component: {fileID: 189131397}
+  - component: {fileID: 189131396}
+  - component: {fileID: 189131395}
+  - component: {fileID: 189131394}
+  - component: {fileID: 189131393}
+  m_Layer: 7
+  m_HasEditorInfo: 1
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &189131393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 46186cbe1ad393c49a3fbe964facdaf1, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 876a6c77-c888-49f9-a19c-a75084e43b28
+    m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9328b345-78df-4b0b-ace2-d4983de0275b
+    m_ActionName: Player/Move[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c9a43c4e-8d6a-4d4f-b5cf-b6d0b475c9ad
+    m_ActionName: Player/Skill[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f0f419bc-e9cb-4f8f-ae3f-eab3914aa7a5
+    m_ActionName: Player/Invisible[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6b091906-e34a-420d-80b1-0b1efcd766e3
+    m_ActionName: Player/Change[/Mouse/rightButton]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!58 &189131394
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 8b0518096c1599c4ca26a4fe45c46a82, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0025384128}
+  serializedVersion: 2
+  m_Radius: 0.5051333
+--- !u!114 &189131395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1233679032a1b3045a9bdc72caee5d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stableSprite: {fileID: 21300000, guid: 6bc7c848b671764489091f1db91acaeb, type: 3}
+  crazySprite: {fileID: 21300000, guid: 789e96b7a9b046041b7d185d6ef6ee60, type: 3}
+  invisibleSprite: {fileID: 21300000, guid: d9435a4cc5590a24ea5d2359eef18c25, type: 3}
+  hurtSprite: {fileID: 21300000, guid: 5127cb238fcccc74887981d5fa6c4e68, type: 3}
+  stableBubblePrefabs:
+  - {fileID: 6880792912600633818, guid: c645fb49d1066654fb12d71ae0b004ef, type: 3}
+  - {fileID: 8194793689893172659, guid: 3c55f7c1115230b429051c0ec0bd1ee5, type: 3}
+  - {fileID: 4991701642512575664, guid: 0870cd334250bd244b3ee245af3a6066, type: 3}
+  - {fileID: 4863175067947550795, guid: 1b17d30115e5d374eae202bca7e92389, type: 3}
+  - {fileID: 4706723797731570344, guid: d2f5a30a2617eb943b019f01165a9d52, type: 3}
+  crazyBubblePrefabs:
+  - {fileID: 7242912643261569174, guid: 47b778ac2efb9674da48361641a0159a, type: 3}
+  - {fileID: 7465497366006830073, guid: 6af860dce2a4a844e9a7d185ebe92ef3, type: 3}
+  - {fileID: 22055389878600112, guid: 0414a25d06befd44096cdd6afc26c80f, type: 3}
+  - {fileID: 8361798288389388419, guid: 013f70a8b8ca0f3408bef31da9129d31, type: 3}
+  - {fileID: 4066582620117284624, guid: f390d1df144ebe445b67e05884d77256, type: 3}
+  withdrawMessagePrefab: {fileID: 0}
+  moveSpeed: 5
+  jumpForce: 7
+  crazyBubbleBounceForce: 15
+  groundDetected: 0
+  crazyDetected: 0
+  groundCheckDistance: 0.55
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  whatIsCrazy:
+    serializedVersion: 2
+    m_Bits: 64
+  playerCrazyCost: 20
+  playerStableCost: 15
+  maxStableBubbles: 3
+--- !u!114 &189131396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46b8639b71bbad4eb11472aab949b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 100
+  ui: {fileID: 0}
+  regenPerSecond: 5
+--- !u!50 &189131397
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.7853982
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 3
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &189131398
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_virtualGeometry: 0
+  m_virtualGeometryShadow: 0
+  m_ShadingRate: 0
+  m_ForceDisableGRD: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &189131399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189131392}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.51, y: 0.99, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &195361091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2806,6 +3165,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3126952046479731453, guid: aaab1b9781fdfa24daf234a1f4061952, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 3622089424950415800, guid: aaab1b9781fdfa24daf234a1f4061952, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.63
@@ -2849,6 +3212,14 @@ PrefabInstance:
     - target: {fileID: 5293309706339124771, guid: aaab1b9781fdfa24daf234a1f4061952, type: 3}
       propertyPath: m_Name
       value: MissileBubble 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937412847878580913, guid: aaab1b9781fdfa24daf234a1f4061952, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937412847878580913, guid: aaab1b9781fdfa24daf234a1f4061952, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3461,6 +3832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -3726,7 +4101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &233971542
 Rigidbody2D:
   serializedVersion: 4
@@ -4126,6 +4500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (06)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -4353,6 +4731,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -4493,6 +4875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 16
       objectReference: {fileID: 0}
+    - target: {fileID: 2671884624465419520, guid: db6b32eb5d8dd2c4c9310059a5a4cabb, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6348477438258430257, guid: db6b32eb5d8dd2c4c9310059a5a4cabb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.5
@@ -4531,6 +4917,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6348477438258430257, guid: db6b32eb5d8dd2c4c9310059a5a4cabb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576681333767357860, guid: db6b32eb5d8dd2c4c9310059a5a4cabb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576681333767357860, guid: db6b32eb5d8dd2c4c9310059a5a4cabb, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4605,6 +4999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -4798,6 +5196,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -4908,7 +5310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &289630931
 Rigidbody2D:
   serializedVersion: 4
@@ -5194,6 +5595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -5268,7 +5673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &327941190
 Rigidbody2D:
   serializedVersion: 4
@@ -5414,6 +5818,39 @@ Transform:
   - {fileID: 452196637}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &336851944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 336851945}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336851945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336851944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.914733, y: -5.973507, z: 6.927394}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 913033534}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341200939
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,6 +5992,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5613,7 +6062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &346865230
 Rigidbody2D:
   serializedVersion: 4
@@ -5811,6 +6259,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5951,6 +6411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -6127,6 +6591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (08)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -6175,6 +6643,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2490575423195716278, guid: 616eca6be8bec50449c68c3fba627f3e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 2790748772348501013, guid: 616eca6be8bec50449c68c3fba627f3e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -6392,7 +6864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &424697400
 Rigidbody2D:
   serializedVersion: 4
@@ -6588,7 +7059,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &430548685
 Rigidbody2D:
   serializedVersion: 4
@@ -6887,6 +7357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -7064,6 +7538,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7932847205638125425, guid: 060baba5a3dc64b4396673661e09892a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7136,6 +7614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -7456,6 +7938,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7858,7 +8352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d2b62416723994ea63bcb1af998dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 694591554}
+  player: {fileID: 189131399}
   minSpeed: 0.5
   baseSpeed: 1
   maxSpeed: 1.5
@@ -8120,6 +8614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -8445,6 +8943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -8595,7 +9097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &556521758
 Rigidbody2D:
   serializedVersion: 4
@@ -8962,6 +9463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (05)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -9036,6 +9541,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9186,6 +9703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -9391,6 +9912,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 886507303282625715, guid: 6fe93a3d61deba140aa16e37d9ffcbeb, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1942290685833693662, guid: 6fe93a3d61deba140aa16e37d9ffcbeb, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -9525,7 +10050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &627856683
 Rigidbody2D:
   serializedVersion: 4
@@ -9824,6 +10348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -9949,6 +10477,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -10009,263 +10541,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
---- !u!1 &694591547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 7
-  m_Component:
-  - component: {fileID: 694591554}
-  - component: {fileID: 694591553}
-  - component: {fileID: 694591552}
-  - component: {fileID: 694591551}
-  - component: {fileID: 694591550}
-  - component: {fileID: 694591549}
-  - component: {fileID: 694591548}
-  m_Layer: 7
-  m_HasEditorInfo: 1
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &694591548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a46b8639b71bbad4eb11472aab949b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxValue: 100
-  ui: {fileID: 0}
-  regenPerSecond: 5
---- !u!114 &694591549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 46186cbe1ad393c49a3fbe964facdaf1, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 876a6c77-c888-49f9-a19c-a75084e43b28
-    m_ActionName: Player/Jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9328b345-78df-4b0b-ace2-d4983de0275b
-    m_ActionName: Player/Move[/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c9a43c4e-8d6a-4d4f-b5cf-b6d0b475c9ad
-    m_ActionName: Player/Skill[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: f0f419bc-e9cb-4f8f-ae3f-eab3914aa7a5
-    m_ActionName: Player/Invisible[/Keyboard/r]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 6b091906-e34a-420d-80b1-0b1efcd766e3
-    m_ActionName: Player/Change[/Mouse/rightButton]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: 
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!58 &694591550
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8b0518096c1599c4ca26a4fe45c46a82, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &694591551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1233679032a1b3045a9bdc72caee5d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stableSprite: {fileID: 21300000, guid: 11126d79e7d8498428b097063433d2b7, type: 3}
-  crazySprite: {fileID: 21300000, guid: 789e96b7a9b046041b7d185d6ef6ee60, type: 3}
-  invisibleSprite: {fileID: 21300000, guid: d9435a4cc5590a24ea5d2359eef18c25, type: 3}
-  hurtSprite: {fileID: 0}
-  stableBubblePrefabs:
-  - {fileID: 8342500996144460793, guid: 4c06d27e60b4d9d47b6be26530913628, type: 3}
-  crazyBubblePrefabs:
-  - {fileID: 2823016635356195340, guid: 9419e7f9e7022c446a96f53dbcad1dc7, type: 3}
-  withdrawMessagePrefab: {fileID: 0}
-  moveSpeed: 5
-  jumpForce: 7.5
-  crazyBubbleBounceForce: 15
-  groundDetected: 0
-  crazyDetected: 0
-  groundCheckDistance: 0.55
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
-  whatIsCrazy:
-    serializedVersion: 2
-    m_Bits: 64
-  playerCrazyCost: 20
-  playerStableCost: 15
-  maxStableBubbles: 3
---- !u!50 &694591552
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.7853982
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 3
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!212 &694591553
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_virtualGeometry: 0
-  m_virtualGeometryShadow: 0
-  m_ShadingRate: 0
-  m_ForceDisableGRD: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &694591554
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694591547}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.72, y: 1.62, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &704672076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10350,6 +10625,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8157222772851874683, guid: 5e40c634868e6da459f13f64a3be91cc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10422,6 +10701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -10585,7 +10868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &719086000
 Rigidbody2D:
   serializedVersion: 4
@@ -10872,6 +11154,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11104,6 +11398,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8157222772851874683, guid: 5e40c634868e6da459f13f64a3be91cc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11232,6 +11530,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11316,6 +11626,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1259527336875678694, guid: 759c7fb133ae12a45b105e46e03a6466, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 3886780970045153374, guid: 759c7fb133ae12a45b105e46e03a6466, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -11460,6 +11774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -11536,6 +11854,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11596,6 +11926,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11654,6 +11996,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11728,6 +12082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -12254,6 +12612,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5114626593397519683, guid: ace4957fdb569504a9d5f0108b0e7df6, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 5408571991955359370, guid: ace4957fdb569504a9d5f0108b0e7df6, type: 3}
       propertyPath: m_Name
       value: MissileBubble
@@ -12324,7 +12686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &876259829
 Rigidbody2D:
   serializedVersion: 4
@@ -12602,6 +12963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -13077,6 +13442,116 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &913033533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 913033534}
+  - component: {fileID: 913033535}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913033534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913033533}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1858253, y: 6.3722134, z: -0.034552097}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 336851945}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913033535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913033533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f00ce91a783f94580a76e7820275be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: TestScene
+    clips:
+    - {fileID: 8300000, guid: f3eaf5eb79fd440499ebdbf17efa92e7, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  - name: Crazy
+    clips:
+    - {fileID: 8300000, guid: 07157ff316c01c74d953535b4de106c6, type: 3}
+    - {fileID: 8300000, guid: a743ee1a4f4910a498853bab2c4ecf07, type: 3}
+    - {fileID: 8300000, guid: b553e3e6fcc07e645820eab9fb158584, type: 3}
+    - {fileID: 8300000, guid: c11c9b16a6d2ce54d9b9ce7752dff0e0, type: 3}
+    - {fileID: 8300000, guid: db40ab7bb185d1546ab4e560fdeba9f7, type: 3}
+    - {fileID: 8300000, guid: 1de436e01a6728a4f827e6f6cc3570a4, type: 3}
+    - {fileID: 8300000, guid: bca9a50b2fe4e9c409f925dc11f2e09b, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Invisible
+    clips:
+    - {fileID: 8300000, guid: 32fbbf0e172f34b4d8f38bb44941656d, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Stable
+    clips:
+    - {fileID: 8300000, guid: 48ea9c6f96b44d94fa22aca28ae8403a, type: 3}
+    - {fileID: 8300000, guid: 754fba614d57d6c4eb7f9827fc3d906d, type: 3}
+    - {fileID: 8300000, guid: d940c27d41431d846b7ed57f51797bd3, type: 3}
+    - {fileID: 8300000, guid: 8c8ee62c89fe6ca49bf5a806db76a388, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Hurt
+    clips:
+    - {fileID: 8300000, guid: 6df745e86ee19be4882f731163176543, type: 3}
+    - {fileID: 8300000, guid: 361384c660a5e6c449be02fb7563c42c, type: 3}
+    - {fileID: 8300000, guid: fa4c52f5c16edca4da7127039d474707, type: 3}
+    - {fileID: 8300000, guid: 773d2e1a745228d46a5bf56c25786008, type: 3}
+    - {fileID: 8300000, guid: 77f5e68bc3beced4292956c6474180db, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Land
+    clips:
+    - {fileID: 8300000, guid: 23eb3e2171d43ec41a64e0d59ecfe133, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: MainMenu
+    clips:
+    - {fileID: 8300000, guid: a687f503158bb3941a9aa6d7df7e785c, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  sfxSource: {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!1001 &914680651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13121,6 +13596,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7928821609858062540, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 8243512304757654773, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.540001
@@ -13219,6 +13698,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13484,6 +13975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -13673,6 +14168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2312548070882596580, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6651605546536025738, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -13805,6 +14304,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13861,6 +14372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5114626593397519683, guid: ace4957fdb569504a9d5f0108b0e7df6, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 5408571991955359370, guid: ace4957fdb569504a9d5f0108b0e7df6, type: 3}
       propertyPath: m_Name
       value: MissileBubble (1)
@@ -14005,7 +14520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127, y: 117.9}
+  m_AnchoredPosition: {x: -243, y: 158}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964022518
@@ -14449,6 +14964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -14485,6 +15004,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -14800,6 +15323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -15338,6 +15865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -15426,6 +15957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (04)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -15500,7 +16035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1070989128
 Rigidbody2D:
   serializedVersion: 4
@@ -15654,6 +16188,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2312548070882596580, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6651605546536025738, guid: f211ce7d433d59748aac6c29d3e5f58d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15798,6 +16336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -15940,7 +16482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1109091345
 Rigidbody2D:
   serializedVersion: 4
@@ -16098,6 +16639,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -16222,6 +16767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -16310,6 +16859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -16398,6 +16951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (03)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -16651,6 +17208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -16739,6 +17300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -16984,6 +17549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -17058,7 +17627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1170529403
 Rigidbody2D:
   serializedVersion: 4
@@ -17254,7 +17822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1178290881
 Rigidbody2D:
   serializedVersion: 4
@@ -17484,6 +18051,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8157222772851874683, guid: 5e40c634868e6da459f13f64a3be91cc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17542,7 +18113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1192734926
 Rigidbody2D:
   serializedVersion: 4
@@ -17738,7 +18308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1196559523
 Rigidbody2D:
   serializedVersion: 4
@@ -17948,6 +18517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -18215,6 +18788,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18273,7 +18858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1212860206
 Rigidbody2D:
   serializedVersion: 4
@@ -18469,7 +19053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1216452057
 Rigidbody2D:
   serializedVersion: 4
@@ -18665,7 +19248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1218976818
 Rigidbody2D:
   serializedVersion: 4
@@ -18861,7 +19443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1224378360
 Rigidbody2D:
   serializedVersion: 4
@@ -19059,6 +19640,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19193,7 +19786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1239610716
 Rigidbody2D:
   serializedVersion: 4
@@ -19383,6 +19975,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7928821609858062540, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 8243512304757654773, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.9700003
@@ -19439,10 +20035,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1037900152158577116, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037900152158577116, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1224234007069112687, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
       propertyPath: m_Name
       value: MissileBubble 10 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5119660793239474358, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 7373833433488952377, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.46
@@ -19555,6 +20163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -19629,7 +20241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1268086739
 Rigidbody2D:
   serializedVersion: 4
@@ -19825,6 +20436,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20247,6 +20870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -20412,6 +21039,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20484,6 +21123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -20576,6 +21219,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7621068363948459462, guid: 1bee7004f93ce864095d70f371de0be3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20839,6 +21486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -20915,6 +21566,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20987,6 +21650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -21164,6 +21831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -21238,6 +21909,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -21401,6 +22084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -21680,6 +22367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -21837,6 +22528,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7928821609858062540, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 8243512304757654773, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.700001
@@ -21935,6 +22630,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -22391,6 +23098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (07)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -22745,7 +23456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1470272662
 Rigidbody2D:
   serializedVersion: 4
@@ -23171,6 +23881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7932847205638125425, guid: 060baba5a3dc64b4396673661e09892a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23229,7 +23943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1493661464
 Rigidbody2D:
   serializedVersion: 4
@@ -23568,6 +24281,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4337149624158046583, guid: df4c9e78cffd0534c8c16fad62c4db51, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 7614298424243110357, guid: df4c9e78cffd0534c8c16fad62c4db51, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -23670,7 +24387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1510501203
 Rigidbody2D:
   serializedVersion: 4
@@ -24127,6 +24843,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24199,6 +24927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -24659,6 +25391,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -24769,7 +25505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1571462441
 Rigidbody2D:
   serializedVersion: 4
@@ -25238,6 +25973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -25312,6 +26051,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -25601,6 +26352,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -4934916484052724889, guid: 79b236bb19f9b3b4883712100e6371c2, type: 2}
+    - target: {fileID: 4193322400091644101, guid: a0ed892c6f4fcb44889d9fe4aaaf7553, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 4389609551560218276, guid: a0ed892c6f4fcb44889d9fe4aaaf7553, type: 3}
       propertyPath: m_Name
       value: MissileBubble 12
@@ -25795,7 +26550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1599449872
 Rigidbody2D:
   serializedVersion: 4
@@ -25953,6 +26707,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 579546788763052680, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 1125742081398716567, guid: 11340419d7b1f83479f9d6b595b50baf, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -26153,6 +26911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -26490,7 +27252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1622235470
 Rigidbody2D:
   serializedVersion: 4
@@ -26716,6 +27477,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8157222772851874683, guid: 5e40c634868e6da459f13f64a3be91cc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27156,7 +27921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1635005599
 Rigidbody2D:
   serializedVersion: 4
@@ -27366,6 +28130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -27454,6 +28222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -27542,6 +28314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -27910,6 +28686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -28056,7 +28836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1711477757
 Rigidbody2D:
   serializedVersion: 4
@@ -28266,6 +29045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -28340,7 +29123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1743879836
 Rigidbody2D:
   serializedVersion: 4
@@ -28550,6 +29332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -28795,6 +29581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -29243,6 +30033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (02)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -29319,6 +30113,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29371,6 +30177,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7928821609858062540, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 8243512304757654773, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.43
@@ -29558,7 +30368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1824094539
 Rigidbody2D:
   serializedVersion: 4
@@ -30130,6 +30939,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7928821609858062540, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 8243512304757654773, guid: a6260a44986ad36419efec1d30e5b855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.580001
@@ -30433,6 +31246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -30541,6 +31358,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8157222772851874683, guid: 5e40c634868e6da459f13f64a3be91cc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30688,7 +31509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1927369582
 Rigidbody2D:
   serializedVersion: 4
@@ -30966,6 +31786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -31042,6 +31866,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31114,6 +31950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -31188,7 +32028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1946659139
 Rigidbody2D:
   serializedVersion: 4
@@ -31384,7 +32223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1955186452
 Rigidbody2D:
   serializedVersion: 4
@@ -31582,6 +32420,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31722,6 +32572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -31878,6 +32732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -31966,6 +32824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -32010,6 +32872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5119660793239474358, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 7373833433488952377, guid: ed0192acae2f86c4f9b9e6fb956df81b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.97
@@ -32122,6 +32988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -32543,6 +33413,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501731674278509859, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552020728351677536, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026593029740736704, guid: 4d593173a8d7e934cae7f5ef3a1db9af, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -33334,6 +34216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -33408,7 +34294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &2117870945
 Rigidbody2D:
   serializedVersion: 4
@@ -33795,7 +34680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ef506f80ecd442bd9155b61b7c615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!50 &2122920995
 Rigidbody2D:
   serializedVersion: 4
@@ -34005,6 +34889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileBubble 13 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 5476092725169119563, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 189131392}
     - target: {fileID: 6990511070494882657, guid: bf2374b04b051184cb09841becc6c6a5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -34036,7 +34924,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 886019027}
   - {fileID: 110806166}
-  - {fileID: 694591554}
+  - {fileID: 189131399}
+  - {fileID: 336851945}
   - {fileID: 1982185693}
   - {fileID: 804509869}
   - {fileID: 1591196349}

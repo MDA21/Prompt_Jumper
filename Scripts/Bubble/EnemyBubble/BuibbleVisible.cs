@@ -5,9 +5,9 @@ using TMPro;
 
 public class BuibbleVisible : MonoBehaviour
 {
-    Camera mainCamera;
+    private Camera mainCamera;
 
-    public SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
     
     // Start is called before the first frame update
     void Start()

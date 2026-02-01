@@ -585,7 +585,7 @@ MonoBehaviour:
     m_Bits: 128
   whatIsCrazy:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   playerCrazyCost: 25
   playerStableCost: 20
   maxStableBubbles: 3
