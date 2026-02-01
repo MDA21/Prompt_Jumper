@@ -47,7 +47,7 @@ public class BuibbleVisible : MonoBehaviour
         float spriteTop = getSpriteTop(spriteRenderer);
         float cameraBottom = getCameraBottom(mainCamera);
         setVisible(cameraTop > spriteTop);
-        hide(cameraBottom > spriteTop);
+        hide(cameraBottom > spriteTop + 1f);
 
     }   
 
@@ -70,6 +70,10 @@ public class BuibbleVisible : MonoBehaviour
 
     private void hide(bool outOfView)
     {
-        gameObject.SetActive(!outOfView);
+        if (!outOfView)
+            {
+            return;
+        }
+        Destroy(gameObject);
     }
 }

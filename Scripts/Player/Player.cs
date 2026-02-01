@@ -45,8 +45,8 @@ public class Player : MonoBehaviour
     [SerializeField]private LayerMask whatIsCrazy;
     private bool canBounce = true;
 
-    public int playerCrazyCost = 25;
-    public int playerStableCost = 20;
+    public int playerCrazyCost = 20;
+    public int playerStableCost = 15;
     
     public bool IsInvisible
     {
