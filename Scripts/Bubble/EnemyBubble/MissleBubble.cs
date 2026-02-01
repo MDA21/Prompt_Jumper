@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MissileBubble : MonoBehaviour
 {
-    [Header("Settings")]
-    public float speed = 2f; // 水平移动最大速度（单位：单位/秒）
+    private float speedX = 1f; // 水平移动最大速度
+    private float speedY = 0.2f; // 垂直移动最大速度
 
     public GameObject player;
     private Rigidbody2D rb;
@@ -32,11 +32,13 @@ public class MissileBubble : MonoBehaviour
 
         // 目标水平位置
         float targetX = player.transform.position.x;
+        float targetY = player.transform.position.y;
 
         // 按 speed 限制移动距离
-        float newX = Mathf.MoveTowards(currentPos.x, targetX, speed * Time.fixedDeltaTime);
+        float newX = Mathf.MoveTowards(currentPos.x, targetX, speedX * Time.fixedDeltaTime);
+        float newY = Mathf.MoveTowards(currentPos.y, targetY, speedY * Time.fixedDeltaTime);
 
         // 设置新的位置，只改变 X
-        rb.MovePosition(new Vector2(newX, currentPos.y));
+        rb.MovePosition(new Vector2(newX, newY));
     }
 }

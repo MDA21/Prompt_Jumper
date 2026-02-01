@@ -45,17 +45,35 @@ public class BuibbleVisible : MonoBehaviour
     {
         float cameraTop = getCameraTop(mainCamera);
         float spriteTop = getSpriteTop(spriteRenderer);
+        float cameraBottom = getCameraBottom(mainCamera);
         setVisible(cameraTop > spriteTop);
+        hide(cameraBottom > spriteTop + 1f);
 
     }   
 
     private void setVisible(bool visible)
     {
+        foreach (Behaviour b in gameObject.GetComponents<Behaviour>())
+        {
+            if (b != this)
+            {
+                b.enabled = visible;
+            }
+        }
         gameObject.GetComponent<SpriteRenderer>().enabled = visible;
         for (int i = 0; i < transform.childCount; i++)
         {
             Transform child = transform.GetChild(i);
             child.gameObject.SetActive(visible); // Òþ²Ø×ÓÎïÌå
         }
+    }
+
+    private void hide(bool outOfView)
+    {
+        if (!outOfView)
+            {
+            return;
+        }
+        Destroy(gameObject);
     }
 }
