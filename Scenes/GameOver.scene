@@ -440,6 +440,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &407755135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 407755136}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407755136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407755135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.914733, y: -5.973507, z: 6.927394}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 630827605}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &412664065
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,39 +773,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &501289498
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 7
-  m_Component:
-  - component: {fileID: 501289499}
-  m_Layer: 0
-  m_HasEditorInfo: 1
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &501289499
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501289498}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.914733, y: -5.973507, z: 6.927394}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1630231478}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &578758833
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +926,132 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &630827604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 630827605}
+  - component: {fileID: 630827606}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630827605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630827604}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1858253, y: 6.3722134, z: -0.034552097}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 407755136}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630827606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630827604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f00ce91a783f94580a76e7820275be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Level1
+    clips:
+    - {fileID: 8300000, guid: f3eaf5eb79fd440499ebdbf17efa92e7, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  - name: Crazy
+    clips:
+    - {fileID: 8300000, guid: 07157ff316c01c74d953535b4de106c6, type: 3}
+    - {fileID: 8300000, guid: a743ee1a4f4910a498853bab2c4ecf07, type: 3}
+    - {fileID: 8300000, guid: b553e3e6fcc07e645820eab9fb158584, type: 3}
+    - {fileID: 8300000, guid: c11c9b16a6d2ce54d9b9ce7752dff0e0, type: 3}
+    - {fileID: 8300000, guid: db40ab7bb185d1546ab4e560fdeba9f7, type: 3}
+    - {fileID: 8300000, guid: 1de436e01a6728a4f827e6f6cc3570a4, type: 3}
+    - {fileID: 8300000, guid: bca9a50b2fe4e9c409f925dc11f2e09b, type: 3}
+    - {fileID: 8300000, guid: 38da153e2d18122489aa3cbc7765b71b, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Invisible
+    clips:
+    - {fileID: 8300000, guid: 32fbbf0e172f34b4d8f38bb44941656d, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Stable
+    clips:
+    - {fileID: 8300000, guid: 48ea9c6f96b44d94fa22aca28ae8403a, type: 3}
+    - {fileID: 8300000, guid: 754fba614d57d6c4eb7f9827fc3d906d, type: 3}
+    - {fileID: 8300000, guid: d940c27d41431d846b7ed57f51797bd3, type: 3}
+    - {fileID: 8300000, guid: 8c8ee62c89fe6ca49bf5a806db76a388, type: 3}
+    - {fileID: 8300000, guid: 380c9db2588e4d348878c93463f35336, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Hurt
+    clips:
+    - {fileID: 8300000, guid: 6df745e86ee19be4882f731163176543, type: 3}
+    - {fileID: 8300000, guid: 361384c660a5e6c449be02fb7563c42c, type: 3}
+    - {fileID: 8300000, guid: fa4c52f5c16edca4da7127039d474707, type: 3}
+    - {fileID: 8300000, guid: 773d2e1a745228d46a5bf56c25786008, type: 3}
+    - {fileID: 8300000, guid: 77f5e68bc3beced4292956c6474180db, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: Land
+    clips:
+    - {fileID: 8300000, guid: 23eb3e2171d43ec41a64e0d59ecfe133, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    isMusic: 0
+  - name: MainMenu
+    clips:
+    - {fileID: 8300000, guid: a687f503158bb3941a9aa6d7df7e785c, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  - name: GameOver
+    clips:
+    - {fileID: 8300000, guid: aa3ce07fa7ddc8d44b8b8a25104206dc, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  - name: Congratulations
+    clips:
+    - {fileID: 8300000, guid: 8f78dd994a5994f479b899e70a8ff71c, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  sfxSource: {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!1 &712131405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,7 +2228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: -281}
+  m_AnchoredPosition: {x: -20, y: -453}
   m_SizeDelta: {x: 250.27, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354941035
@@ -2698,132 +2824,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1630231477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 7
-  m_Component:
-  - component: {fileID: 1630231478}
-  - component: {fileID: 1630231479}
-  m_Layer: 0
-  m_HasEditorInfo: 1
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1630231478
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630231477}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1858253, y: 6.3722134, z: -0.034552097}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 501289499}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1630231479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630231477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0f00ce91a783f94580a76e7820275be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Level1
-    clips:
-    - {fileID: 8300000, guid: f3eaf5eb79fd440499ebdbf17efa92e7, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 1
-    isMusic: 1
-  - name: Crazy
-    clips:
-    - {fileID: 8300000, guid: 07157ff316c01c74d953535b4de106c6, type: 3}
-    - {fileID: 8300000, guid: a743ee1a4f4910a498853bab2c4ecf07, type: 3}
-    - {fileID: 8300000, guid: b553e3e6fcc07e645820eab9fb158584, type: 3}
-    - {fileID: 8300000, guid: c11c9b16a6d2ce54d9b9ce7752dff0e0, type: 3}
-    - {fileID: 8300000, guid: db40ab7bb185d1546ab4e560fdeba9f7, type: 3}
-    - {fileID: 8300000, guid: 1de436e01a6728a4f827e6f6cc3570a4, type: 3}
-    - {fileID: 8300000, guid: bca9a50b2fe4e9c409f925dc11f2e09b, type: 3}
-    - {fileID: 8300000, guid: 38da153e2d18122489aa3cbc7765b71b, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    isMusic: 0
-  - name: Invisible
-    clips:
-    - {fileID: 8300000, guid: 32fbbf0e172f34b4d8f38bb44941656d, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    isMusic: 0
-  - name: Stable
-    clips:
-    - {fileID: 8300000, guid: 48ea9c6f96b44d94fa22aca28ae8403a, type: 3}
-    - {fileID: 8300000, guid: 754fba614d57d6c4eb7f9827fc3d906d, type: 3}
-    - {fileID: 8300000, guid: d940c27d41431d846b7ed57f51797bd3, type: 3}
-    - {fileID: 8300000, guid: 8c8ee62c89fe6ca49bf5a806db76a388, type: 3}
-    - {fileID: 8300000, guid: 380c9db2588e4d348878c93463f35336, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    isMusic: 0
-  - name: Hurt
-    clips:
-    - {fileID: 8300000, guid: 6df745e86ee19be4882f731163176543, type: 3}
-    - {fileID: 8300000, guid: 361384c660a5e6c449be02fb7563c42c, type: 3}
-    - {fileID: 8300000, guid: fa4c52f5c16edca4da7127039d474707, type: 3}
-    - {fileID: 8300000, guid: 773d2e1a745228d46a5bf56c25786008, type: 3}
-    - {fileID: 8300000, guid: 77f5e68bc3beced4292956c6474180db, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 0
-    isMusic: 0
-  - name: Land
-    clips:
-    - {fileID: 8300000, guid: 23eb3e2171d43ec41a64e0d59ecfe133, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    isMusic: 0
-  - name: MainMenu
-    clips:
-    - {fileID: 8300000, guid: a687f503158bb3941a9aa6d7df7e785c, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 1
-    isMusic: 1
-  - name: GameOver
-    clips:
-    - {fileID: 8300000, guid: aa3ce07fa7ddc8d44b8b8a25104206dc, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 1
-    isMusic: 1
-  - name: Congratulations
-    clips:
-    - {fileID: 8300000, guid: 8f78dd994a5994f479b899e70a8ff71c, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 1
-    isMusic: 1
-  sfxSource: {fileID: 0}
-  musicSource: {fileID: 0}
 --- !u!1 &1684513373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5103,4 +5103,4 @@ SceneRoots:
   - {fileID: 578758837}
   - {fileID: 2053658633}
   - {fileID: 2065903800}
-  - {fileID: 501289499}
+  - {fileID: 407755136}

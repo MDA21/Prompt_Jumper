@@ -251,7 +251,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator InvisibleTimer()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5.7f);
         if (stateMachine.CurrentState == invisibleState)
         {
             stateMachine.ChangeState(stableState);

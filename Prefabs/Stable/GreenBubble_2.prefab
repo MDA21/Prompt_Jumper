@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7243927474755304655}
   - component: {fileID: 6098537295328336845}
   - component: {fileID: 690971095164476021}
-  m_Layer: 7
+  m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 7696669053134076415}
   - component: {fileID: 4580252150078192832}
   - component: {fileID: 6441925214697146760}
-  m_Layer: 7
+  m_Layer: 3
   m_HasEditorInfo: 1
   m_Name: GreenBubble_2
   m_TagString: Untagged
@@ -322,7 +322,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

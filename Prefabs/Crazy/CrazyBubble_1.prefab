@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8490248609518928932}
   - component: {fileID: 2714583469146901241}
   - component: {fileID: 3601436323148836158}
-  m_Layer: 8
+  m_Layer: 6
   m_HasEditorInfo: 1
   m_Name: CrazyBubble_1
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 72
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 3191242814787869716}
   - component: {fileID: 8453874740087296343}
   - component: {fileID: 8842583169638914996}
-  m_Layer: 8
+  m_Layer: 6
   m_HasEditorInfo: 1
   m_Name: GameObject
   m_TagString: Untagged
