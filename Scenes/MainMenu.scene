@@ -186,6 +186,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: db40ab7bb185d1546ab4e560fdeba9f7, type: 3}
     - {fileID: 8300000, guid: 1de436e01a6728a4f827e6f6cc3570a4, type: 3}
     - {fileID: 8300000, guid: bca9a50b2fe4e9c409f925dc11f2e09b, type: 3}
+    - {fileID: 8300000, guid: 38da153e2d18122489aa3cbc7765b71b, type: 3}
     volume: 0.2
     pitch: 1
     loop: 0
@@ -203,6 +204,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 754fba614d57d6c4eb7f9827fc3d906d, type: 3}
     - {fileID: 8300000, guid: d940c27d41431d846b7ed57f51797bd3, type: 3}
     - {fileID: 8300000, guid: 8c8ee62c89fe6ca49bf5a806db76a388, type: 3}
+    - {fileID: 8300000, guid: 380c9db2588e4d348878c93463f35336, type: 3}
     volume: 0.2
     pitch: 1
     loop: 0
@@ -228,6 +230,13 @@ MonoBehaviour:
   - name: MainMenu
     clips:
     - {fileID: 8300000, guid: a687f503158bb3941a9aa6d7df7e785c, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    isMusic: 1
+  - name: GameOver
+    clips:
+    - {fileID: 8300000, guid: aa3ce07fa7ddc8d44b8b8a25104206dc, type: 3}
     volume: 0.2
     pitch: 1
     loop: 1
