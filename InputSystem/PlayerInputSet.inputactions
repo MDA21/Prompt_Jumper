@@ -55,19 +55,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "fb0c6485-2c64-41ff-8078-05b94ec0718a",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Player",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "7d223ebc-3311-42f6-b127-724ba484553d",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -111,7 +100,7 @@
                 {
                     "name": "",
                     "id": "833dd217-a2c4-488a-8c3f-55369b392a8c",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
